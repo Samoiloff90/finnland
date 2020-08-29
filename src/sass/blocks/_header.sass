@@ -1,0 +1,45 @@
+.header
+  position: relative
+  &::before
+    content: url('../img/header/doctors.png')
+    position: absolute
+    right: 0
+    z-index: -1
+
+.logo-header
+  margin-right: 20px
+
+.navbar
+  padding: 30px 0px 141px 0px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.navigation
+  &__link
+    text-decoration: none
+    color: $logo-color
+    margin-right: 40px
+    font-size: 14px
+    cursor: pointer
+    +bold
+    &:last-child
+      margin-right: 0
+
+.phone-header
+  font-size: 17px
+  text-decoration: none
+  color: $tel-color
+  cursor: pointer
+  margin-right: 30px
+  +bold
+
+.button-header
+  color: $white-color
+  font-size: 14px
+  cursor: pointer
+  border-radius: 25px
+  border: none
+  padding: 17px 33px
+  +bg
+  +bold

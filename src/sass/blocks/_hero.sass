@@ -1,0 +1,52 @@
+.hero-block
+  max-width: 49%
+  margin-bottom: 144px
+  position: relative
+  &::after
+    content: url('../img/header/teeth.png')
+    position: absolute
+    z-index: -2
+    right: 70%
+    top: 380px
+    
+    
+  &__title
+    font-size: 43px
+    color: $logo-color
+    margin: 0px 0px 28px 0px
+    +bold
+  &__text
+    color: $rare-text-color
+    margin: 0px 0px 44px 0px
+    font-size: 15px
+    line-height: 1.7
+    +bold
+  &__line
+    width: 14px
+    height: 2px
+    background-color: $act-text-color
+    position: relative
+    left: 8px
+    margin-bottom: 31px
+    &::before
+      content: ""
+      width: 5px
+      height: 2px
+      background-color: $act-text-color
+      position: absolute
+      right: -7px
+    &::after
+      content: ""
+      width: 5px
+      height: 2px
+      background-color: $act-text-color
+      position: absolute
+      left: -7px
+  &__question
+    font-size: 14px
+    +bold
+    &_text
+      color: $rare-text-color
+    &_link
+      text-decoration: none
+      color: $act-text-color
